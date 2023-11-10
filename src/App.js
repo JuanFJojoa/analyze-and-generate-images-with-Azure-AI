@@ -15,8 +15,11 @@ function App() {
     <div>
       <h1>Image Analyzer and Generator</h1>
       <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Enter image URL" />
-      <button onClick={handleAnalysis}>Analyze Image</button>
+      <div> 
+        <button onClick={handleAnalysis}>Analyze Image</button>
       <button onClick={handleGeneration}>Generate Image</button>
+      </div>
+     
     </div>
   );
 }
