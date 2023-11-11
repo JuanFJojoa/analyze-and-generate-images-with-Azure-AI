@@ -22,7 +22,7 @@ function App() {
         return (
             <div>
                 <h2>Results</h2>
-                <p>{JSON.stringify(result, null, 2)}</p>
+                <p>{result.description.captions[0].text}</p>
                 <img src={url} alt="Analyzed" />
             </div>
         );
