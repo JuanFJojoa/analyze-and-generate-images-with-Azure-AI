@@ -14,9 +14,9 @@ export const analyzeImage = async (imageUrl) => {
     };
 
     const body = {
-        'data': imageUrl,
+        'url': imageUrl,
     };
 
-    const response = await axios.post(endpoint, headers=headers, params=params, data=imageUrl);
+    const response = await axios.post(endpoint, headers=headers, params=params,body);
     return response.data;
 };
