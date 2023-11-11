@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { analyzeImage } from './src/azure-image-analysis';
+import { analyzeImage } from './azure-image-analysis';
 
 function App() {
     const [url, setUrl] = useState('');
