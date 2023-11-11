@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const analyzeImage = async (imageUrl) => {
-    const endpoint = 'https://https://anayze-generate-images.cognitiveservices.azure.com//computervision/imageanalysis:analyze?api-version=2023-02-01-preview;
+    const endpoint = 'https://https://anayze-generate-images.cognitiveservices.azure.com//computervision/imageanalysis:analyze?api-version=2023-02-01-preview';
     const params = {
         //'api-version': '2023-02-01-preview',
         'features': 'tags,read,caption,denseCaptions,smartCrops,objects,people',
