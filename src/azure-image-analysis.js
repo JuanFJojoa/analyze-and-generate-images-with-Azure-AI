@@ -1,5 +1,10 @@
 import axios from 'axios';
+import React, { useState } from 'react';
 
+
+const ImageDescriber = () => {
+  const [url, setUrl] = useState('');
+  
 export const analyzeImage = async (imageUrl) => {
     const endpoint = 'https://anayze-generate-images.cognitiveservices.azure.com/computervision/imageanalysis:analyze&api-version=2023-02-01-preview';
     const params = {
@@ -12,7 +17,7 @@ export const analyzeImage = async (imageUrl) => {
     };
 
     const body = {
-        'url': imageUrl,
+        url: imageUrl,
     };
 
     const response = await axios.post(endpoint, body, { params, headers });
