@@ -2,18 +2,18 @@ import axios from 'axios';
  
 
 export const analyzeImage = async (imageUrl) => {
-    const endpoint = 'https://australiaeast.cognitiveservices.azure.com/computervision/imageanalysis:analyze&api-version=2023-02-01-preview';
+    const endpoint = 'https://analysis-image-vision.cognitiveservices.azure.com/computervision/imageanalysis:analyze?api-version=2023-02-01-preview';
     const params = {
         'features': 'tags,read,caption,denseCaptions,smartCrops,objects,people',
     };
 
     const headers = {
         'Content-Type': 'application/json',
-        'Ocp-Apim-Subscription-Key': '12f8906d0fa2446f926148fe74fb6773',
+        'Ocp-Apim-Subscription-Key': '16963c76cc6e4c46b73aee14a1ea4cd3',
     };
 
     const body = {
-        'url': 'imageUrl',
+        'url': imageUrl,
     };
 
     try {
