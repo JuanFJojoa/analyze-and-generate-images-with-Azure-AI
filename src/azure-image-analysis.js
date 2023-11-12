@@ -13,7 +13,7 @@ export const analyzeImage = async (imageUrl) => {
     };
 
     const body = {
-        'url': imageUrl,
+        'url': 'imageUrl',
     };
 
     try {
